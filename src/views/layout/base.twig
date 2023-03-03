@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+{% block head %}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>{{ title }}</title>
+
+	{% block styles %}
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./assets/css/main.min.css">
+	{% endblock %}
+	{% block styles_page %}{% endblock %}
+	{% block scripts_head %}
+
+	{% endblock %}
+	{% block scripts_page_head %}{% endblock %}
+{% endblock %}
+</head>
+<body>
+<div class="wrapper">
+{% block page %}
+	{% block header %}
+
+	{% endblock %}
+
+	<div class="content">
+		{% block content %}{% endblock %}
+	</div>
+	{% block footer %}
+
+	{% endblock %}
+{% endblock %}
+</div>
+{% block scripts_page %}{% endblock %}
+{% block scripts %}
+	<script src="./assets/js/main.min.js"></script>
+{% endblock %}
+</body>
+</html>

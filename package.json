@@ -1,0 +1,71 @@
+{
+  "name": "gulp-webpack-starter-kit",
+  "version": "2.1.0",
+  "description": "Gulp + Webpack starter kit - Окружение для разработки веб-проектов",
+  "author": "alexsoin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alexsoin/gw-starter-kit.git"
+  },
+  "browserslist": [
+    "last 2 version",
+    "not dead"
+  ],
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env"
+      ]
+    ]
+  },
+  "scripts": {
+    "watch": "gulp --developer",
+    "prodwatch": "gulp",
+    "devbuild": "gulp build --developer",
+    "build": "gulp build",
+    "upload": "gulp upload",
+    "deploy": "gulp deployRsync",
+    "deploy:dev": "gulp deployRsync --deploy dev",
+    "deploy:prod": "gulp deployRsync --deploy prod"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/register": "^7.16.0",
+    "@fancyapps/ui": "^4.0.26",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.27.5",
+    "del": "^6.0.0",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-confirm": "^1.0.8",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-image": "6.2.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-rimraf": "^1.0.0",
+    "gulp-rsync": "^0.0.9",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-twing": "^4.0.0",
+    "gulp-version-number": "^0.2.4",
+    "maskedinput": "^3.3.11",
+    "node-notifier": "^10.0.0",
+    "sass": "^1.42.1",
+    "slick-carousel": "^1.8.1",
+    "terser-webpack-plugin": "^5.2.4",
+    "twing": "^5.0.2",
+    "webpack": "^5.53.0",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.10.1",
+    "bootstrap": "^5.1.1",
+    "expose-loader": "^3.1.0"
+  }
+}
